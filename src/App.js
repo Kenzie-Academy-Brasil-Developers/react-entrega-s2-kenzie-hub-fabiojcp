@@ -1,18 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import Login from "./Pages/Login/Login";
-import Register from "./Pages/Register/Register";
-import { useState, useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
+import RouteMap from "./Routes/Routes";
+
 
 function App() {
-
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login/>} />
-        <Route path="/Register" element={<Register/>} />
-        <Route path="/Home" element={<Home/>} />
-      </Routes>
+      <RouteMap />
     </BrowserRouter>
   );
 }

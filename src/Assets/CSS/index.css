@@ -37,3 +37,10 @@ select:focus-visible {
 a {
   text-decoration: none;
 }
+div {
+  width: 100%;
+}
+
+.PasswordStrengthBar {
+  position: absolute;
+}

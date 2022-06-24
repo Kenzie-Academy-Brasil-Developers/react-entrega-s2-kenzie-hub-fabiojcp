@@ -1,7 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import devices from "../../Assets/Devices/Devices";
 
+const animation = keyframes`
+    from{
+        opacity: 0;
+        transform: scale(0.6)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1)
+    }
+`;
+
 export const DivMain = styled.div`
+  animation: ${animation} 1s;
   @media ${devices.mobileSS} {
     display: flex;
     flex-direction: column;
@@ -110,14 +122,31 @@ export const LabelSub = styled.label`
 export const BtnRegister = styled.button`
   @media ${devices.mobileSS} {
     width: 80%;
-    background: #868E96;
-    border: 1px solid #868E96;
+    background: #868e96;
+    border: 1px solid #868e96;
     border-radius: 5px;
     padding: 1.5vh 0;
     font-family: Inter;
   }
   :active {
-    background: #343B41;
-    border: 1px solid #343B41;
+    background: #343b41;
+    border: 1px solid #343b41;
   }
 `;
+
+
+export const DivErros = styled.div`
+  position: fixed;
+  right: 10vw;
+  top: 2vh;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end
+`
+
+export const Span = styled.p`
+border: 2px solid red;
+border-radius: 5%;
+padding: 0.5vh;
+background-color: #624385;
+`
