@@ -8,8 +8,8 @@ Nesta aplicação o usuário poderá se cadastrar, adicionar as tecnologias que 
 
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 #
-<img src="https://img.shields.io/badge/progress-100%25-brightgreen.svg" alt="Progresso"></a><br>
-<img src="https://img.shields.io/badge/Vers%C3%A3o-0.1.1-blue" alt="Versão"></a>
+<img src="https://img.shields.io/badge/progress-30%25-brightgreen.svg" alt="Progresso"></a><br>
+<img src="https://img.shields.io/badge/Vers%C3%A3o-0.1.2-blue" alt="Versão"></a>
 
 ## 📜 Prévia:
 <h3>
