@@ -102,6 +102,7 @@ export const ButtonSubmit = styled.button`
     border-radius: 5px;
     padding: 1.5vh 0;
     font-family: Inter;
+    color: white;
   }
   :active {
     background: #ff577f;
@@ -127,6 +128,7 @@ export const BtnRegister = styled.button`
     border-radius: 5px;
     padding: 1.5vh 0;
     font-family: Inter;
+    color: white;
   }
   :active {
     background: #343b41;

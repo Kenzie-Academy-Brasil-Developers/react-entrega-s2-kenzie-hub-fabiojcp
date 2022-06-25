@@ -29,7 +29,10 @@ export default function LoginBox({ authenticated, setAuthenticated }) {
 
   const schema = yup.object().shape({
     email: yup.string().required("Email obrigatório!").email("Email inválido"),
-    password: yup.string().required("Senha obrigatório!"),
+    password: yup
+      .string()
+      .min(6, "Mínimo de 6 dígitos")
+      .required("Senha obrigatório!"),
   });
 
   const {

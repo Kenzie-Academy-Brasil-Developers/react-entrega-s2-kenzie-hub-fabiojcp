@@ -38,7 +38,15 @@ export default function RouteMap() {
               />
             }
           />
-          <Route path="/Home" element={<Home />} />
+          <Route
+            path="/Home"
+            element={
+              <Home
+                authenticated={authenticated}
+                setAuthenticated={setAuthenticated}
+              />
+            }
+          />
         </Routes>
       </AnimatePresence>
     </>
