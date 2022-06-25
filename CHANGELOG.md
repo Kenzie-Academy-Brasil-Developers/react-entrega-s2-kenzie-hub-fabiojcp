@@ -2,11 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.1.4](https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-fabiojcp/compare/v0.1.3...v0.1.4) (2022-06-25)
-
-### [0.1.3](https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-fabiojcp/compare/v0.1.2...v0.1.3) (2022-06-25)
-
-
 ### Features
 
 * HomePage ([5e6dcec](https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-fabiojcp/commit/5e6dcec07fdc754e7f247d4dbee6d79866841ac1))
