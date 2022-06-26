@@ -7,6 +7,10 @@ export const Header = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 85vw;
+    margin: 5vh 7.5vw 3vh 7.5vw;
+  }
+  @media ${devices.tabletS} {
     width: 40%;
     margin: 5vh 30% 3vh 30%;
   }
