@@ -1,6 +1,7 @@
-.Toastify__toast  {
-  width: 80vw;
+.Toastify__toast-container  {
+  width: 66vw;
   height: 10vh;
   left: 10vw;
-  bottom: 5vh;
+  top: 25vh;
+  z-index: 51;
 }
