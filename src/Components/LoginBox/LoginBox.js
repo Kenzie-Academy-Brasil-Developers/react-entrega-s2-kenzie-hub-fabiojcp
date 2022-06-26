@@ -23,6 +23,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Api from "../../Services/Api.js";
+import devices from "../../Assets/Devices/Devices.jsx";
 
 export default function LoginBox({ authenticated, setAuthenticated }) {
   let navigate = useNavigate();
@@ -106,22 +107,34 @@ export default function LoginBox({ authenticated, setAuthenticated }) {
               {type === "password" ? (
                 <EyeFilled
                   style={{
-                    position: "absolute",
-                    marginLeft: "60%",
-                    marginTop: "-7.8vh",
-                    color: "white",
-                    cursor: "pointer",
+                    "@media (min-width: 0px)": {
+                      position: "absolute",
+                      marginLeft: "60%",
+                      marginTop: "-7.8vh",
+                      color: "black",
+                      cursor: "pointer",
+                    },
+                    "@media (min-width: 540px)": {
+                      marginLeft: "60%",
+                      marginTop: "-6.8vh",
+                    },
                   }}
                   onClick={passwordType}
                 />
               ) : (
                 <EyeInvisibleFilled
                   style={{
-                    position: "absolute",
-                    marginLeft: "60%",
-                    marginTop: "-7.8vh",
-                    color: "white",
-                    cursor: "pointer",
+                    "@media (min-width: 0px)": {
+                      position: "absolute",
+                      marginLeft: "60%",
+                      marginTop: "-6.8vh",
+                      color: "black",
+                      cursor: "pointer",
+                    },
+                    "@media (min-width: 540px)": {
+                      marginLeft: "60%",
+                      marginTop: "-6.8vh",
+                    },
                   }}
                   onClick={passwordType}
                 />

@@ -20,6 +20,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Api from "../../Services/Api.js";
 import PasswordStrengthBar from "react-password-strength-bar";
+import "./Style.css"
 
 export default function RegisterBox({ authenticated, setAuthenticated }) {
   let navigate = useNavigate();
@@ -144,28 +145,14 @@ export default function RegisterBox({ authenticated, setAuthenticated }) {
                 error={errors.password?.message}
                 value={password}
                 onChange={(event) => setPassword(`${event.target.value}`)}
+                type={type}
               ></Input>
               {type === "password" ? (
                 <EyeFilled
-                  style={{
-                    position: "absolute",
-                    marginLeft: "60%",
-                    marginTop: "-7.8vh",
-                    color: "white",
-                    cursor: "pointer",
-                  }}
-                  size="1.4em"
                   onClick={passwordType}
                 />
               ) : (
                 <EyeInvisibleFilled
-                  style={{
-                    position: "absolute",
-                    marginLeft: "60%",
-                    marginTop: "-7.8vh",
-                    color: "white",
-                    cursor: "pointer",
-                  }}
                   onClick={passwordType}
                 />
               )}
@@ -182,27 +169,14 @@ export default function RegisterBox({ authenticated, setAuthenticated }) {
                 {...register("passwordConfirm")}
                 name="passwordConfirm"
                 error={errors.passwordConfirm?.message}
+                type={type}
               ></Input>
               {type === "password" ? (
                 <EyeFilled
-                  style={{
-                    position: "absolute",
-                    marginLeft: "60%",
-                    marginTop: "-7.8vh",
-                    color: "white",
-                    cursor: "pointer",
-                  }}
                   onClick={passwordType}
                 />
               ) : (
                 <EyeInvisibleFilled
-                  style={{
-                    position: "absolute",
-                    marginLeft: "60%",
-                    marginTop: "-7.8vh",
-                    color: "white",
-                    cursor: "pointer",
-                  }}
                   onClick={passwordType}
                 />
               )}

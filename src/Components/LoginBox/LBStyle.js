@@ -20,6 +20,9 @@ export const DivMain = styled.div`
     align-items: center;
     margin-bottom: 5vh;
   }
+  @media ${devices.tabletS} {
+
+  }
 `;
 
 export const Title = styled.p`
@@ -28,6 +31,10 @@ export const Title = styled.p`
     font-weight: 800;
     font-size: 5vw;
     margin: 10vh 0 4vh 0;
+  }
+  @media ${devices.tabletS} {
+    font-size: 3vw;
+    margin: 4vh 0 4vh 0;
   }
 `;
 
@@ -41,6 +48,10 @@ export const DivInpt = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 6vh 0;
+  }
+  @media ${devices.tabletS} {
+    width: 40vw;
+    padding: 4vh 0;
   }
 `;
 
@@ -60,6 +71,9 @@ export const TitleLogin = styled.p`
     font-size: 3.5vw;
     margin: 0 0 10% 0;
   }
+  @media ${devices.tabletS} {
+    font-size: 2vw;
+  }
 `;
 
 export const Label = styled.label`
@@ -71,6 +85,9 @@ export const Label = styled.label`
     display: flex;
     align-items: flex-start;
     margin: 0 0 2vh 0;
+  }
+  @media ${devices.tabletS} {
+    font-size: 1.5vw;
   }
 `;
 
@@ -86,11 +103,19 @@ export const Input = styled.input`
     padding: 1vh 0 1vh 4%;
     margin: 0 0 4vh 0;
   }
+  @media ${devices.tabletS} {
+    font-size: 1.7vw;
+    height: 3vh;
+    margin: 1vh 0 3vh 0;
+  }
   ::placeholder {
     color: #868e96;
   }
   :focus-visible {
     border: 1px solid #f8f9fa;
+  }
+  :hover {
+    background-color: black;
   }
 `;
 
@@ -104,8 +129,16 @@ export const ButtonSubmit = styled.button`
     font-family: Inter;
     color: white;
   }
+  @media ${devices.tabletS} {
+    font-size: 1.9vw;
+    padding: 0.8vh 0;
+    margin: 2vh 0 2vh 0;
+  }
   :active {
     background: #ff577f;
+  }
+  :hover {
+    background: #ff577f90;
   }
 `;
 
@@ -117,6 +150,10 @@ export const LabelSub = styled.label`
     margin-bottom: 2%;
     text-align: center;
     margin: 5vh 0 5vh 0;
+  }
+  @media ${devices.tabletS} {
+    font-size: 1.9vw;
+    margin: 4vh 0;
   }
 `;
 
@@ -130,12 +167,19 @@ export const BtnRegister = styled.button`
     font-family: Inter;
     color: white;
   }
+  @media ${devices.tabletS} {
+    font-size: 1.9vw;
+    padding: 0.8vh 0;
+    margin: 1vh 0;
+  }
   :active {
     background: #343b41;
     border: 1px solid #343b41;
   }
+  :hover {
+    background: #343b39;
+  }
 `;
-
 
 export const DivErros = styled.div`
   position: fixed;
@@ -143,12 +187,18 @@ export const DivErros = styled.div`
   top: 2vh;
   width: 30%;
   display: flex;
-  justify-content: flex-end
-`
+  justify-content: flex-end;
+`;
 
 export const Span = styled.p`
-border: 2px solid red;
-border-radius: 5%;
-padding: 0.5vh;
-background-color: #624385;
-`
+  border: 2px solid red;
+  border-radius: 5%;
+  padding: 0.5vh;
+  background-color: #624385;
+`;
+
+export const EyeStyle = {
+  "@media (min-width:0px)" : {
+
+  }
+}

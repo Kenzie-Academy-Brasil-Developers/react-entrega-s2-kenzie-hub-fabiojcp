@@ -1,0 +1,16 @@
+.anticon {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -7.8vh;
+    color: black;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 540px) {
+    .anticon {
+      margin-left: 29%;
+      margin-top: -6.4vh;
+      color: black;
+      cursor: pointer;
+    }
+  }

@@ -14,6 +14,12 @@ export const DivMain = styled.div`
     align-items: center;
     border-radius: 4px;
   }
+  @media ${devices.tabletS} {
+    font-size: 3vw;
+  }
+  :hover {
+    background: #868E96;
+  }
 `;
 
 export const Title = styled.p`
@@ -21,11 +27,17 @@ export const Title = styled.p`
     font-weight: 700;
     font-size: 4.3vw;
   }
+  @media ${devices.tabletS} {
+    font-size: 2.5vw;
+  }
 `;
 
 export const Status = styled.p`
   @media ${devices.mobileSS} {
     font-weight: 200;
     font-size: 3.8vw;
+  }
+  @media ${devices.tabletS} {
+    font-size: 2.5vw;
   }
 `;

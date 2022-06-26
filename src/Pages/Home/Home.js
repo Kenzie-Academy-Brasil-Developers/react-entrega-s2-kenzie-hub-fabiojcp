@@ -1,4 +1,4 @@
-import { Header, Title, BtnBack } from "../../Components/RegisterBox/RBStyle";
+import { Header, Title, BtnBack } from "./HomeStyle";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Api from "../../Services/Api";
@@ -102,7 +102,7 @@ export default function Home({ authenticated, setAuthenticated }) {
           setSkill={setSkill}
         />
       )}
-      <Header style={{ margin: "3vh 3vw 2vh 3vw", width: "94vw" }}>
+      <Header>
         <Title>Kenzie Hub</Title>
         <Link to={"/"}>
           <BtnBack

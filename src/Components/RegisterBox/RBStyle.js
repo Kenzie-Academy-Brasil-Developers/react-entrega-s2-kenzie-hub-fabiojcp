@@ -7,8 +7,8 @@ export const Header = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 5vh 10% 3vh 10%;
+    width: 40%;
+    margin: 5vh 30% 3vh 30%;
   }
 `;
 
@@ -17,6 +17,9 @@ export const Title = styled.p`
     color: #ff577f;
     font-weight: 800;
     font-size: 5vw;
+  }
+  @media ${devices.tabletS} {
+    font-size: 3vw;
   }
 `;
 
@@ -32,6 +35,12 @@ export const BtnBack = styled.button`
     border: none;
     padding: 1vh 3vw;
     text-decoration: none;
+  }
+  @media ${devices.tabletS} {
+    padding: 1vh 2vw;
+  }
+  :hover {
+    background: #212535;
   }
 `;
 
@@ -53,6 +62,10 @@ export const Select = styled.select`
   }
   :focus-visible {
     border: 1px solid #f8f9fa;
+  }
+  @media ${devices.tabletS} {
+    font-size: 1.5vw;
+    margin-bottom: 4%;
   }
 `;
 
@@ -84,5 +97,9 @@ export const LabelSub = styled.p`
     margin-bottom: 2%;
     text-align: center;
     margin: 0 0 2vh 0;
+  }
+  @media ${devices.tabletS} {
+    font-size: 2vw;
+    margin-bottom: 4%;
   }
 `

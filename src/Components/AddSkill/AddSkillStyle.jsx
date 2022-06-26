@@ -30,6 +30,10 @@ export const DivMain = styled.div`
     box-shadow: 0 0 5000px 5000px #ffffff16;
     z-index: 2;
   }
+  @media ${devices.tabletS} {
+    width: 60vw;
+    margin: 20vh 20vw 0 20vw;
+  }
 `;
 
 export const Header = styled.div`
@@ -50,6 +54,10 @@ export const HeaderTitle = styled.p`
   @media ${devices.mobileSS} {
     font-weight: 700;
     font-size: 4.5vw;
+  }
+  @media ${devices.tabletS} {
+    font-weight: 700;
+    font-size: 2.5vw;
   }
 `;
 
@@ -72,6 +80,7 @@ export const Form = styled.form`
     padding: 0 5%;
     width: 90%;
   }
+
 `;
 
 export const Label = styled.label`
@@ -80,12 +89,16 @@ export const Label = styled.label`
     font-weight: 400;
     font-size: 4vw;
   }
+  @media ${devices.tabletS} {
+    font-weight: 700;
+    font-size: 2vw;
+  }
 `;
 
 export const Input = styled.input`
   @media ${devices.mobileSS} {
-    background: #343B41;
-    border: 1px solid #343B41 ;
+    background: #343b41;
+    border: 1px solid #343b41;
     border-radius: 4px;
     color: #f8f9fa;
     padding-left: 2%;
@@ -96,12 +109,15 @@ export const Input = styled.input`
 export const Select = styled.select`
   @media ${devices.mobileSS} {
     width: 100%;
-    background: #343B41;
-    border: 1px solid #343B41 ;
+    background: #343b41;
+    border: 1px solid #343b41;
     border-radius: 4px;
-    color: #868E96;
+    color: #868e96;
     font-family: Inter;
     margin: 0 0 1vh 0;
+  }
+  @media ${devices.tabletS} {
+    font-size: 2vw;
   }
 `;
 
@@ -113,9 +129,8 @@ export const Option = styled.option`
 
 export const BtnAdd = styled.button`
   @media ${devices.mobileSS} {
-    @media ${devices.mobileSS} {
     width: 100%;
-    background: #ff427f;
+    background: #ff427e;
     border: 1px solid #ff427f;
     border-radius: 5px;
     padding: 1.5vh 0;
@@ -126,5 +141,7 @@ export const BtnAdd = styled.button`
   :active {
     background: #ff577f;
   }
+  :hover {
+    background: #ff577f;
   }
 `;
