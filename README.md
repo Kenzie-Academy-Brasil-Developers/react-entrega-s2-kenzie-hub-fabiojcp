@@ -10,8 +10,8 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 
 #
 
-<img src="https://img.shields.io/badge/progress-70%25-brightgreen.svg" alt="Progresso"></a><br>
-<img src="https://img.shields.io/badge/Vers%C3%A3o-1.0.2-blue" alt="Versão"></a>
+<img src="https://img.shields.io/badge/progress-95%25-brightgreen.svg" alt="Progresso"></a><br>
+<img src="https://img.shields.io/badge/Vers%C3%A3o-1.3.0-blue" alt="Versão"></a>
 
 ## 📜 Prévia:
 
