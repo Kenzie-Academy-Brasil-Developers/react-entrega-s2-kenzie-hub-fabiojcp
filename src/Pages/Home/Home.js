@@ -10,7 +10,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import EditSkill from "../../Components/EditSkill/EditSkill";
 
-export default function Home({ authenticated, setAuthenticated }) {
+export default function Home({ setAuthenticated }) {
   const [Modal, setModal] = useState(false);
   const [skillEdit, setskillEdit] = useState(false);
   const [skill, setSkill] = useState({});
@@ -109,6 +109,7 @@ export default function Home({ authenticated, setAuthenticated }) {
             onClick={() => {
               localStorage.removeItem("@KenzieHub:token");
               localStorage.removeItem("user");
+              setAuthenticated(false)
             }}
           >
             Voltar

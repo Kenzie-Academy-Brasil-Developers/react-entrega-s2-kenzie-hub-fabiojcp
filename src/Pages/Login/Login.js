@@ -1,10 +1,15 @@
 import LoginBox from "../../Components/LoginBox/LoginBox";
+import { Navigate } from "react-router-dom";
 
 export default function Login({ authenticated, setAuthenticated }) {
   return (
-    <LoginBox
-      authenticated={authenticated}
-      setAuthenticated={setAuthenticated}
-    />
+    <>
+      {authenticated && <Navigate to="/Home" />}
+
+      <LoginBox
+        authenticated={authenticated}
+        setAuthenticated={setAuthenticated}
+      />
+    </>
   );
 }

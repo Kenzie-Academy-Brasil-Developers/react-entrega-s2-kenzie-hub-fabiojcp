@@ -9,8 +9,6 @@ import {
   ButtonSubmit,
   LabelSub,
   BtnRegister,
-  DivErros,
-  Span,
 } from "./LBStyle.js";
 import { EyeFilled, EyeInvisibleFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -23,7 +21,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Api from "../../Services/Api.js";
-import devices from "../../Assets/Devices/Devices.jsx";
 
 export default function LoginBox({ authenticated, setAuthenticated }) {
   let navigate = useNavigate();
