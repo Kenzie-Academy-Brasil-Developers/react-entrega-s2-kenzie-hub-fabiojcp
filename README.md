@@ -13,7 +13,7 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 <img src="https://img.shields.io/badge/progress-70%25-brightgreen.svg" alt="Progresso"></a><br>
 <img src="https://img.shields.io/badge/Vers%C3%A3o-1.0.2-blue" alt="Versão"></a>
 
-## 📜 Prévia:
+## 📜 Prévia::
 
 <h3>
 <img src="./src/Assets/Imgs/Login.jpeg" alt="Página de login" height="250" width="125">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./src/Assets/Imgs/Login.jpeg" alt="Página de login" height="250" width="125">
